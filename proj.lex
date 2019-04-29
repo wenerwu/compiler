@@ -75,7 +75,7 @@ string  	\"(\\.|[^\\"])*\"
 {string}	{yylval.treeNodeType = makeStringNode(yytext); return STRING;}
 
 
-.		yyerror("ERROR CHARACTER!");
+.		yyerror("ERROR CHARACTER!!");
 
 %%
 int yywrap()
